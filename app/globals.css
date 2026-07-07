@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  color: #1e1e1c;
+  background-color: #ffffff;
+}
+
+::selection {
+  background-color: #2f5d3a;
+  color: #ffffff;
+}
+
+/* Focus visibility for keyboard nav */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #2f5d3a;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.section-heading {
+  letter-spacing: -0.02em;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f5f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #2f5d3a;
+  border-radius: 8px;
+}
